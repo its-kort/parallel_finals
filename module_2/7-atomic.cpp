@@ -5,8 +5,6 @@
 using namespace std;
 
 atomic<int> counter = 0;
-// atomic - ensures safe access to shared data in multi-threaded programs without using locks
-//        - however, race condition is still possible unlike mutex
 
 void increment() {
     for (int i = 1; i <= 10; i++) {
@@ -22,5 +20,12 @@ int main() {
     t2.join();
 
     cout << "[MAIN] Total Counter: " << counter << endl;
+    /* atomic - ensures safe access to shared data in multi-threaded programs without using locks
+             - however, race condition is still possible unlike mutex
+    */
+
+    /* Output:
+        [MAIN] Total Counter: 10
+    */
     return 0;
 }

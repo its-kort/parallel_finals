@@ -26,8 +26,10 @@ int main() {
     t1.join();
     t2.join();
 
-    // sleep_until - puts thread to "sleep" (waits) a certain amount of time before resuming
-    //             - sleeps until a specific point in time is reached. 
-    //             - in this example, it pauses the thread until 2 seconds from now.
+    /* sleep_until - puts thread to "sleep" (waits) a certain amount of time before resuming
+                   - sleeps until a specific point in time is reached. 
+                   - in this example, it pauses the thread until 2 seconds from now.
+                   - sleep thread, then run
+    */
     return 0;
 }

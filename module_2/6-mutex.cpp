@@ -18,6 +18,12 @@ int main() {
 
     t1.join();
     t2.join();
-    t3.join();     
+    t3.join();   
+
+    /* Output:
+        Thread: 1
+        Thread: 2
+        Thread: 3
+    */  
     return 0;
 }

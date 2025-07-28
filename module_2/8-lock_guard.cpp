@@ -6,9 +6,6 @@ using namespace std;
 
 mutex mtx;
 
-// Lock Guard - an elegant way to manage mutexes and ensure that they
-//              are properly locked and unlocked, preventing potential deadlocks and race conditions.
-
 void PrintID(int id) {
     lock_guard<mutex> guard(mtx); // Locks the mutex
     cout << "Thread: " << id << endl;
@@ -21,5 +18,13 @@ int main() {
     t1.join();
     t2.join();
 
+    /* Lock Guard - an elegant way to manage mutexes and ensure that they
+                    are properly locked and unlocked, preventing potential deadlocks and race conditions.
+    */
+   
+    /* Output:
+        Thread: 1
+        Thread: 2
+    */
     return 0;
 }

@@ -30,5 +30,6 @@ int main() {
     t3.join();
 
     // join()   - waits for the thread to finish its execution
+    // Output depends. Race condition occurs.
     return 0;
 }

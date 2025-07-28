@@ -33,5 +33,6 @@ int main() {
 
     cout << "[MAIN] Program end." << endl; 
     // detach() - permits the thread to execute independently from the thread handle
+    // Output depends. Main() might finish first before the threads finish executing since they are executed independently unlike .join()
     return 0;
 }
