@@ -25,7 +25,7 @@ int main() {
     */
 
     /* Output:
-        [MAIN] Total Counter: 10
+        [MAIN] Total Counter: 20
     */
     return 0;
 }
